@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- adding style sheet  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- adding cdn for bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>PAPECO</title>
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <nav class="navbar backgroundnavcol fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/PAP&CO.png" width="150px" height="48px" />
+        </a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- adding below nav bar  -->
+    <div class="container">
+      <div class="mt-5 pt-2"><h5 style="color: black">Welcome!</h5></div>
+      <div class="row">
+        <div class="col-xl-8">
+          <div class="container text-center mt-1 pt-4">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="img/Adidas1.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">LIGHTRUN EDGE FORCE</h5>
+                    <p class="card-text">Value: ₹2,999</p>
+                    <button
+                      class="styleme"
+                      id="exampleDataList"
+                      value="LIGHTRUN EDGE FORCE"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="card mt-4">
+                  <img src="img/Adidas2.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">RUNNING X 4D HEAT.RDY</h5>
+                    <p class="card-text">Value: ₹919</p>
+                    <button
+                      class="backgroundnavcol styleme"
+                      id="exampleDataList"
+                      value="RUNNING X 4D HEAT.RDY"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/Adidas3.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">POMAZOR SHOES</h5>
+                    <p class="card-text">Value: ₹1,799</p>
+                    <button
+                      class="backgroundnavcol styleme"
+                      id="exampleDataList"
+                      value="POMAZOR SHOES"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+                <div class="card mt-4">
+                  <img src="img/Adidas4.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">GRAPHIC TEE</h5>
+                    <p class="card-text">Value: ₹999</p>
+                    <button
+                      class="backgroundnavcol styleme"
+                      id="exampleDataList"
+                      value="GRAPHIC TEE"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/Adidas5.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">TRAE YOUNG 3 SHOES</h5>
+                    <p class="card-text">Value: ₹3,999</p>
+                    <button
+                      class="backgroundnavcol styleme"
+                      id="exampleDataList"
+                      value="TRAE YOUNG 3 SHOES"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                    <!-- <h5 class="styleme"></h5> -->
+                  </div>
+                </div>
+                <div class="card mt-4">
+                  <img src="img/Adidas6.avif" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">ADICOLOR- BAG PACK</h5>
+                    <!-- <p class="card-text">Item code: 8841555</p> -->
+                    <p class="card-text">Value: ₹2,999</p>
+                    <button
+                      class="backgroundnavcol styleme"
+                      id="exampleDataList"
+                      value="ADICOLOR- BAG PACK"
+                      onclick="WhenClicked()"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="pt-4">
+            <div class="bg-body-tertiary rounded mt-1">
+              <div class="p-4">
+                <div class="row">
+                  <h5>
+                    <small><b>Checkout</b></small>
+                  </h5>
+                  <div class="col-sm-5">
+                    <input
+                      class="form-control"
+                      list="datalistOptions"
+                      id="exampleDataList"
+                      placeholder="Product name"
+                    />
+                    <datalist id="datalistOptions">
+                      <option value="LIGHTRUN EDGE FORCE"></option>
+                      <option value="RUNNING X 4D HEAT.RDY"></option>
+                      <option value="POMAZOR SHOES"></option>
+                      <option value="GRAPHIC TEE"></option>
+                      <option value="TRAE YOUNG 3 SHOES"></option>
+                      <option value="ADICOLOR- BAG PACK"></option>
+                    </datalist>
+                  </div>
+                  <div class="col-sm-5">
+                    <input
+                      class="form-control"
+                      type="text"
+                      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                      id="quantity"
+                      placeholder="Quantity"
+                    />
+                  </div>
+                  <div class="col-sm-2">
+                    <button
+                      type="button"
+                      onclick="Addall()"
+                      class="btn btn-outline-success"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- adding production to checkout  -->
+          <div class="mt-2">
+            <div class="bg-body-tertiary rounded mt-1">
+              <div class="p-4">
+                <div class="row">
+                  <h5>
+                    <small> <b>Summary</b></small>
+                  </h5>
+                </div>
+                <table id="invoice">
+                  <thead class="bg-body-tertiary">
+                    <tr>
+                      <th class="bg-body-tertiary">
+                        <h6><b>Product</b></h6>
+                      </th>
+                      <th class="bg-body-tertiary">
+                        <h6><b>Quantity</b></h6>
+                      </th>
+                      <th class="bg-body-tertiary">
+                        <h6><b>Total</b></h6>
+                      </th>
+                      <th class="bg-body-tertiary">
+                        <h6><b>Delete</b></h6>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="invoiceBody"></tbody>
+                </table>
+                <p id="totalAmount"></p>
+                <button id="invoiceButton" onclick="generateInvoice()">
+                  Generate Invoice
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- adding script sheet  -->
+    <script src="script.js"></script>
+  </body>
+</html>
