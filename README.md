@@ -1,4 +1,4 @@
-Project Title: Product Management and Billing System for Decathlon
+Project Title: Product Management and Billing System
 
 Description:
 This project is a web-based application for managing products and generating bills. It allows users to add products, specify quantities, and generate bills based on the selected products.
@@ -14,7 +14,7 @@ Responsive Design: The application is designed to be responsive, ensuring usabil
 Technologies Used:
 Frontend: HTML, CSS, JavaScript
 
-To view the website click on the link below:
-https://monishsai4.github.io/Decathlon-Ops/
+You can view the live webpage in :
+https://monishsai4.github.io/Billing_system/
 
 This page is still under development more and more option will be available in upcoming days stay tuned!!!
