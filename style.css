@@ -42,3 +42,9 @@ table {
   color: grey;
   border-color: #87a9b9;
 }
+
+.overFlow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}

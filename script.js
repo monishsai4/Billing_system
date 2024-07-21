@@ -1,5 +1,6 @@
 // Getting values from id and saving it to a variable
 const productNameInput = document.getElementById("exampleDataList");
+console.log(productNameInput);
 const quantityInput = document.getElementById("quantity");
 const invoiceBody = document.getElementById("invoiceBody");
 const totalAmountDisplay = document.getElementById("totalAmount");
@@ -12,7 +13,7 @@ function priceInput(productNameInp) {
     var priceIn = 919;
   } else if (productNameInp == "POMAZOR SHOES") {
     var priceIn = 1799;
-  } else if (productNameInp == "QGRAPHIC TEE") {
+  } else if (productNameInp == "GRAPHIC TEE") {
     var priceIn = 3999;
   } else if (productNameInp == "TRAE YOUNG 3 SHOES") {
     var priceIn = 799;
@@ -22,23 +23,6 @@ function priceInput(productNameInp) {
   return priceIn;
 }
 
-// function WhenClicked(productNameInp) {
-//   if (productNameInp == "LIGHTRUN EDGE FORCE") {
-//     var priceIn = 2999;
-//   } else if (productNameInp == "RUNNING X 4D HEAT.RDY") {
-//     var priceIn = 919;
-//   } else if (productNameInp == "POMAZOR SHOES") {
-//     var priceIn = 1799;
-//   } else if (productNameInp == "QGRAPHIC TEE") {
-//     var priceIn = 3999;
-//   } else if (productNameInp == "TRAE YOUNG 3 SHOES") {
-//     var priceIn = 799;
-//   } else if (productNameInp == "ADICOLOR- BAG PACK") {
-//     var priceIn = 2999;
-//   }
-//   return priceIn;
-//   alert("Added to Checkout");
-// }
 // writing a function to generate invoice of the sunmmary
 
 function generateInvoice() {
@@ -113,6 +97,7 @@ function showInvoiceButton() {
 // function to add production to table when button is clicked
 function addProductToTable() {
   const productName = productNameInput.value;
+  console.log(productName);
   const quantity = parseInt(quantityInput.value, 10);
   const priceInp = priceInput(productName);
   const total = quantity * priceInp;
